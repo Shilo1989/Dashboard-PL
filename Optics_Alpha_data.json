@@ -1,0 +1,146 @@
+{
+    "Rec_num_1_network_20": [
+        {
+            "ip": "172.16.20.11",
+            "device_type": "PL-4000M",
+            "optics_pn_data": [
+                {
+                    "port": 200,
+                    "optic_pn": "CFP2-DCO-D-4102E"
+                },
+                {
+                    "port": 201,
+                    "optic_pn": "CFP2-DCO-D-2102E"
+                }
+            ]
+        },
+        {
+            "ip": "172.16.20.15",
+            "device_type": "PL-4000M",
+            "optics_pn_data": [
+                {
+                    "port": 200,
+                    "optic_pn": "CFP2-DCO-D-4102E"
+                }
+            ]
+        },
+        {
+            "ip": "172.16.20.16",
+            "device_type": "PL-4000M",
+            "optics_pn_data": [
+                {
+                    "port": 200,
+                    "optic_pn": "CFP2-DCO-D-4102E"
+                }
+            ]
+        },
+        {
+            "ip": "172.16.20.17",
+            "device_type": "PL-2000T",
+            "optics_pn_data": [
+                {
+                    "port": 200,
+                    "optic_pn": "CFP2-DCO-D-2102E"
+                }
+            ]
+        },
+        {
+            "ip": "172.16.20.18",
+            "device_type": "PL-2000T",
+            "optics_pn_data": [
+                {
+                    "port": 200,
+                    "optic_pn": "CFP2-DCO-D-2102E"
+                }
+            ]
+        },
+        {
+            "ip": "172.16.20.19",
+            "device_type": "PL-4000T",
+            "optics_pn_data": [
+                {
+                    "port": 200,
+                    "optic_pn": "CFP2-DCO-D-5102E"
+                },
+                {
+                    "port": 201,
+                    "optic_pn": "CFP2-DCO-D-5102E"
+                },
+                {
+                    "port": 202,
+                    "optic_pn": "CFP2-DCO-D-5102E"
+                },
+                {
+                    "port": 203,
+                    "optic_pn": "CFP2-DCO-D-5102E"
+                }
+            ]
+        },
+        {
+            "ip": "172.16.20.20",
+            "device_type": "PL-4000T",
+            "optics_pn_data": [
+                {
+                    "port": 200,
+                    "optic_pn": "CFP2-DCO-D-5102E"
+                },
+                {
+                    "port": 201,
+                    "optic_pn": "CFP2-DCO-D-5102E"
+                },
+                {
+                    "port": 202,
+                    "optic_pn": "CFP2-DCO-D-5102E"
+                },
+                {
+                    "port": 203,
+                    "optic_pn": "CFP2-DCO-D-5102E"
+                }
+            ]
+        },
+        {
+            "ip": "172.16.20.21",
+            "device_type": "PL-4000T",
+            "optics_pn_data": [
+                {
+                    "port": 200,
+                    "optic_pn": "CFP2-DCO-D-4102E"
+                },
+                {
+                    "port": 201,
+                    "optic_pn": "CFP2-DCO-D-4102E"
+                }
+            ]
+        },
+        {
+            "ip": "172.16.20.22",
+            "device_type": "FB4000T",
+            "optics_pn_data": [
+                {
+                    "port": 200,
+                    "optic_pn": "CFP2-DCO-D-2102E"
+                }
+            ]
+        },
+        {
+            "ip": "172.16.20.24",
+            "device_type": "PL-4000G",
+            "optics_pn_data": [
+                {
+                    "port": 230,
+                    "optic_pn": "QSFPDD-DCO-1104S"
+                }
+            ]
+        },
+        {
+            "ip": "172.16.20.26",
+            "device_type": "PL-4000G",
+            "optics_pn_data": [
+                {
+                    "port": 230,
+                    "optic_pn": "QSFPDD-DCO-1104S"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Alpha Portal</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--link rel= "stylesheet"  href= "/static/style_dashboard.css" /-->  <!-- link to css file including all styling of current html--> 
+<link rel="apple-touch-icon" sizes="180x180" href="/static/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/static/favicon-32x32.png">
+<!--link rel="icon" type="image/png" sizes="16x16" href="/static/favicon-16x16.png"-->
+<link rel="manifest" href="/static/site.webmanifest">
+
+
+
+<style>
+
+
+html { 
+  background: url("https://i0.wp.com/kastamonupancar.com.tr/wp-content/uploads/2018/11/webplunder-background-image-technology-online-website-solutions.jpg?w=2160&ssl=1") no-repeat center center fixed; 
+  //background: url("//static/pexels-engin-akyurt-1435752.jpg")
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+h1 {
+  font-size: 70px;
+  font-weight: 600;
+  background-image: linear-gradient(45deg, #553c9a, #ee4b2b);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  text-align: center;
+}
+
+body {
+  font-family: Arial;
+  color: black;
+  //background-color: #bdbdbd;
+  //background-image: url("https://corpcomputersonline.com/wp-content/uploads/2017/05/web-designer-pune-background.jpg");
+  //background-image: url("https://i0.wp.com/kastamonupancar.com.tr/wp-content/uploads/2018/11/webplunder-background-image-technology-online-website-solutions.jpg?w=2160&ssl=1");
+  //margin: none;
+  //width: 100%;
+}
+ 
+div {
+  display: flex;
+  flex-wrap: wrap;
+}
+ 
+.PDU_buttons {
+	
+	width: 190px;
+	height: 70px;
+	border: 2px solid #eee;
+	background-color: #04AA6D;
+	color: white;
+	padding: 14px 28px;
+	font-size: 20px;
+	font-weight: bold;
+	cursor: pointer;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius:18px;
+    margin-right: 8px;
+	margin:5px;
+	text-decoration: none;
+	
+}
+
+.PDU_buttons:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.VOA_buttons {
+	
+	width: 80px;
+	height: 35px;
+	border: 2px solid #eee;
+	background-color: #04AA6D;
+	color: white;
+	padding: 14px 28px;
+	font-size: 15px;
+	font-weight: bold;
+	cursor: pointer;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius:18px;
+    margin-right: 8px;
+	margin:5px;
+	text-decoration: none;
+	
+}
+
+.VOA_buttons:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.voa_table {
+	border: 1px solid transparen;
+		
+}
+
+.voa_value {
+
+  width: 75px;
+  background-color: #e1b382;  
+  border: 2px solid #a28089;
+  border-radius: 10px;
+  font-size: 15px;
+  padding: 8px; 
+  margin: 5px;  
+  font-weight: bold;
+  color: black;
+  text-align: center;
+}
+
+.smm_ip {
+
+  width: 90px;
+  background-color: #e1b382;  
+  border: 2px solid #a28089;
+  border-radius: 10px;
+  font-size: 15px;
+  padding: 8px; 
+  margin: 5px;  
+  font-weight: bold;
+  color: black;
+  text-align: center;
+}
+  
+.tools {
+	
+	width: 220px;
+	height: 80px;
+	border: 2px solid #eee;
+	background-color: #0080ff;
+	color: white;
+	padding: 14px 28px;
+	font-size: 24px;
+	font-weight: bold;
+	cursor: pointer;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius:18px;
+    margin-right: 8px;
+	margin:8px;
+	text-decoration: none;
+}
+
+.tools:hover {
+  background-color: #ddd;
+  color: black;
+}
+  
+.PDU_portal, .Wizard_portal {
+	display: inline-block;
+	width: 50%;  
+} 
+
+.left {
+        float: left;
+        width: 50%;
+		grid-template-columns: repeat(3,1fr);
+}
+.right {
+	float: right;
+	width: 50%;
+}
+	  
+
+.ALL_Buttons {
+  display: flex;
+  justify-content: center;
+}
+
+#url-select {
+	  margin-right: 10px;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      background-color: #fff;
+      font-size: 16px;
+      color: #333;
+      text-align: center;
+      outline: none;
+    } 
+
+#submit_QC {
+      padding: 10px 16px;
+      background-color: #4CAF50;
+      border: none;
+      border-radius: 5px;
+      color: white;
+      font-size: 14px;
+      cursor: pointer;
+    }
+
+.combo-container {
+    position: absolute;
+    bottom: 310px;
+    right: 70;
+    padding: 20px;
+    }
+</style>
+
+
+</head>
+
+
+    <body>
+	
+	<h1>Alpha Dashboard</h1>
+	<br>
+	
+	<form name="form1" action="/" method="POST">
+	
+	<div class="right">
+	<h2 style="background-color:blue; color:white; width: 99%;" ALIGN=CENTER>PDU</h2>
+	  <div class="ALL_Buttons">
+	  <div><a href="http://20.0.6.6" target="_blank" class="PDU_buttons">PDU 1 - 20.0.6.6</a></div>
+	  <!--button type="submit" name="pdu" value="pdu" class="tools">PDU 20.0.6.6</button-->
+	  <div><a href="http://20.0.6.7" target="_blank" class="PDU_buttons">PDU 2 - 20.0.6.7</a></div>
+	  <div><a href="http://20.0.6.8" target="_blank" class="PDU_buttons">PDU 3 - 20.0.6.8</a></div>
+	  <div><a href="http://20.0.6.9" target="_blank" class="PDU_buttons">PDU 4 - 20.0.6.9</a></div>
+	  <div><a href="http://20.0.6.10" target="_blank" class="PDU_buttons">PDU 5 - 20.0.6.10</a></div>
+	  <div><a href="http://20.0.6.11" target="_blank" class="PDU_buttons">PDU 6 - 20.0.6.11</a></div>
+	
+	</div>
+	
+	
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<!--h2 style="background-color:blue; color:white; width: 35%" ALIGN=CENTER>Alpha Graph reports</h2-->		
+	<!--div class="combo-container">
+	
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		
+		<select id="url-select">
+		  <option value="http://lotus:8080/qcbin/webgraph/public.html#!/domain/PACKETLIGHT/project/Main/webdashboardpage/1017/view?authKey=42b20780-2aa2-44b4-84ec-e08e4deb17f9">PL 1000D</option>
+		  <option value="http://lotus:8080/qcbin/webgraph/public.html#!/domain/PACKETLIGHT/project/Main/webdashboardpage/1014/view?authKey=d2e43274-5939-4cac-9da1-1a3a92223c9f">PL 2000AD</option>
+		  <option value="http://lotus:8080/qcbin/webgraph/public.html#!/domain/PACKETLIGHT/project/Main/webdashboardpage/1016/view?authKey=5f993513-2f0f-461c-af39-8241e2b8ddda">PL 2000T</option>
+		  <option value="http://lotus:8080/qcbin/webgraph/public.html#!/domain/PACKETLIGHT/project/Main/webdashboardpage/1019/view?authKey=c83df4c2-62e9-4212-b594-ec5a2463e65e">PL 4000M</option>
+		  <option value="http://lotus:8080/qcbin/webgraph/public.html#!/domain/PACKETLIGHT/project/Main/webdashboardpage/1020/view?authKey=f28e4239-e3f7-418b-b20c-1df2e044ee74">PL 4000T</option>
+		  <option value="{{ url_for('static', filename='LW_graph_1_20.png') }}">LightWatch</option>
+		  
+	    </select>
+    
+		<button name="submit_QC" id="submit_QC" value="Submit_QC_1" onclick="redirectToSelectedURL()">Go</button>
+
+
+		</div-->
+	</div>
+	
+	
+	
+	
+	<div class="left">
+	
+	<h2 style="background-color:blue; color:white; width: 99%" ALIGN=CENTER>Alpha tools</h2>
+	<div class="ALL_Buttons">
+	  <!--input type="submit" style="font-size : 18px;" name="Submit" class="tools" value="Submit"-->
+	  <button type="submit" name="Wizard" value="Wizard" class="tools">Recovery Wizard</button>
+	  <a href="https://20.0.3.21/cgi-bin/login" target="_blank" class="tools">Polatis</a>
+	  <button type="submit" name="Polatis_API" value="Polatis_API" class="tools">Polatis Web</button>
+	  <a href="microsoft-edge:http://20.0.2.25" target="_blank" class="tools">VIAVI - ONT (Edge)</a>
+	  <a href="http://20.0.2.52:5000/" target="_blank" class="tools">Device IP Panel</a>
+	  <button type="submit" name="Open_excel" value="Open_excel" class="tools">Open LAB IP Excel File</button>
+
+
+    
+	</div>
+	
+	
+	<h2 style="background-color:blue; color:white; width: 40%" ALIGN=CENTER>VOA Attenuation</h2>
+	
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<h2 style="background-color:blue; color:white; width: 40%" ALIGN=CENTER>Disconnect device from LW</h2>
+	<!--<p style="color:blue;font-size:120%;"> Click on connect for connecting specific fiber or remove for cutting fiber</p>-->			
+				
+	
+	
+	
+	<div class="ALL_Buttons">	
+		
+		<table id="voa_table_id" class="voa_table">
+			 
+		<tbody>
+		  <tr>
+			<td><label style="color:black; font-size:16px; font-weight: bold;" >VOA 1:</label></td>
+			<td><input onClick="this.setSelectionRange(0, this.value.length)"  type="text" size="10" id="Attn_1" name="Attn_1" value={{messages[0]}}  class = "voa_value"> </td>
+			<td><button name="Submit_VOA" value="Submit_VOA_1" class="VOA_buttons">Submit</button></td>
+		  </tr>
+		  
+		  <tr>
+			<td><label style="color:black; font-size:16px; font-weight: bold;" >VOA 2:</label></td>
+			<td><input onClick="this.setSelectionRange(0, this.value.length)" type="text" size="10" id="Attn_2" name="Attn_2" value={{messages[1]}}  class = "voa_value"> </td>
+			<td><button name="Submit_VOA" value="Submit_VOA_2" class="VOA_buttons">Submit</button></td>
+		  </tr>
+		  
+		  <tr>
+			<td><label style="color:black; font-size:16px; font-weight: bold;" >VOA 3:</label></td>
+			<td><input onClick="this.setSelectionRange(0, this.value.length)" type="text" size="10" id="Attn_3" name="Attn_3" value={{messages[2]}}  class = "voa_value"> </td>
+			<td><button name="Submit_VOA" value="Submit_VOA_3" class="VOA_buttons">Submit</button></td>
+		  </tr>
+		  
+		  <tr>
+			<td><label style="color:black; font-size:16px; font-weight: bold;" >VOA 4:</label></td>
+			<td><input onClick="this.setSelectionRange(0, this.value.length)" type="text" size="10" id="Attn_4" name="Attn_4" value={{messages[3]}}  class = "voa_value"></td>
+			<td><button name="Submit_VOA" value="Submit_VOA_4" class="VOA_buttons">Submit</button></td>
+		  </tr>
+		  
+		  
+		</tbody> 
+		</table>
+		
+		
+		<table id="smm_mode" class="voa_table">
+			 
+		<tbody>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		  <tr>
+			<td><label style="color:black; font-size:16px; font-weight: bold;" >Device IP:</label></td>
+			<td><input type="text" size="20" id="Device_ip_smm" name="Device_ip_smm"  class = "smm_ip"> </td>
+			<td><button name="Submit_SMM" value="Submit_SMM_1" class="VOA_buttons">Submit</button></td>
+		  </tr>
+		 
+		  
+		  
+		</tbody> 
+		</table>
+		
+		
+		
+		
+	</div>
+					
+					
+				
+	</div>
+		
+	
+	</form>
+	
+	<script type="text/javascript">
+	
+	//let div = document.getElementsByClassName("voa_value");
+	var selections = document.querySelectorAll(".voa_value"); //choose all attributes with class arr
+	
+	for (let i = 0; i < selections.length; i++){
+		let optn = selections[i];
+		let atten = optn.value // the value of the field indeed, the attenuation in dB
+		console.log(atten)
+		//optn.value.concat(' ', 'dB');
+		optn.value = atten + ' dB'; // the attenuation value concatenated with dB string
+		}
+
+
+	function openExcel() {
+		window.open('/static/test.xlsx');
+	}
+    
+	//function openExcel2() {
+	//	window.open('/static/test.xlsx');
+	//}
+	
+	function redirectToSelectedURL1() {
+		var selectedURL = document.getElementById("url-select").value;
+		window.open(selectedURL, "_blank");
+	}
+	
+	function redirectToSelectedURL2() {
+    var selectedURL = document.getElementById("url-select").value;
+    if (selectedURL.endsWith('.png')) {
+      window.open(selectedURL, "_blank");
+    } else {
+      window.open(selectedURL, "_blank");
+    }
+  }
+	
+	function redirectToSelectedURL() {
+    var selectedURL = document.getElementById("url-select").value;
+    if (selectedURL.endsWith('.png')) {
+      var win = window.open();
+      win.document.write('<html><head><title>PNG Picture</title></head><body><img src="' + selectedURL + '"></body></html>');
+    } else {
+      window.open(selectedURL, "_blank");
+    }
+  }
+	</script>
+	
+	
+    </body>
+</html>
+
+
+    
+

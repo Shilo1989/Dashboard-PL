@@ -1,0 +1,58 @@
+{
+    "Attenuation_voa": [
+        {
+            "VOA_num": 1,
+            "Att_value": "0"
+        },
+        {
+            "VOA_num": 2,
+            "Att_value": "37"
+        },
+        {
+            "VOA_num": 3,
+            "Att_value": "3"
+        },
+        {
+            "VOA_num": 4,
+            "Att_value": "6"
+        }
+    ],
+    "Release_version": [
+        {
+            "Product": "1000D",
+            "Version": "2.8.10",
+            "Start_date": "2023-01-02",
+            "Project_days": 60
+        },
+        {
+            "Product": "2000AD",
+            "Version": "2.8.11",
+            "Start_date": "2023-06-25",
+            "Project_days": 60
+        },
+        {
+            "Product": "2000T",
+            "Version": "2.8.10",
+            "Start_date": "2023-06-25",
+            "Project_days": 30
+        },
+        {
+            "Product": "4000T",
+            "Version": "1.4.11",
+            "Start_date": "2023-05-25",
+            "Project_days": 60
+        },
+        {
+            "Product": "4000M",
+            "Version": "1.4.10",
+            "Start_date": "2023-07-09",
+            "Project_days": 60
+        },
+        {
+            "Product": "4000G",
+            "Version": "1.4.11",
+            "Start_date": "2023-08-25",
+            "Project_days": 40
+        }
+    ]
+}

@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Alpha Portal</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--link rel= "stylesheet"  href= "/static/style_dashboard.css" /-->  <!-- link to css file including all styling of current html--> 
+<link rel="apple-touch-icon" sizes="180x180" href="/static/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/static/favicon-32x32.png">
+<!--link rel="icon" type="image/png" sizes="16x16" href="/static/favicon-16x16.png"-->
+<link rel="manifest" href="/static/site.webmanifest">
+
+
+
+<style>
+
+
+html { 
+  background: url("https://i0.wp.com/kastamonupancar.com.tr/wp-content/uploads/2018/11/webplunder-background-image-technology-online-website-solutions.jpg?w=2160&ssl=1") no-repeat center center fixed; 
+  //background: url("//static/pexels-engin-akyurt-1435752.jpg")
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+h1 {
+  font-size: 65px;
+  font-weight: 600;
+  background-image: linear-gradient(45deg, #553c9a, #ee4b2b);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  text-align: center;
+}
+
+body {
+  font-family: Arial;
+  color: black;
+  //background-color: #bdbdbd;
+  //background-image: url("https://corpcomputersonline.com/wp-content/uploads/2017/05/web-designer-pune-background.jpg");
+  //background-image: url("https://i0.wp.com/kastamonupancar.com.tr/wp-content/uploads/2018/11/webplunder-background-image-technology-online-website-solutions.jpg?w=2160&ssl=1");
+  //margin: none;
+  //width: 100%;
+}
+ 
+div {
+  display: flex;
+  flex-wrap: wrap;
+}
+ 
+.PDU_buttons {
+	
+	width: 190px;
+	height: 70px;
+	border: 2px solid #eee;
+	background-color: #04AA6D;
+	color: white;
+	padding: 14px 28px;
+	font-size: 20px;
+	font-weight: bold;
+	cursor: pointer;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius:18px;
+    margin-right: 8px;
+	margin:5px;
+	text-decoration: none;
+	
+}
+
+.PDU_buttons:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.VOA_buttons {
+	
+	width: 80px;
+	height: 35px;
+	border: 2px solid #eee;
+	background-color: #04AA6D;
+	color: white;
+	padding: 14px 28px;
+	font-size: 15px;
+	font-weight: bold;
+	cursor: pointer;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius:18px;
+    margin-right: 8px;
+	margin:5px;
+	text-decoration: none;
+	
+}
+
+.VOA_buttons:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.voa_table {
+	border: 1px solid transparen;
+	display: flex;
+	flex-wrap: wrap;
+		
+}
+
+.voa_value {
+
+  width: 75px;
+  background-color: #e1b382;  
+  border: 2px solid #a28089;
+  border-radius: 10px;
+  font-size: 15px;
+  padding: 8px; 
+  margin: 5px;  
+  font-weight: bold;
+  color: black;
+  text-align: center;
+}
+
+.version_value {
+
+  width: 75px;
+  background-color: #e1b382;  
+  border: 2px solid #a28089;
+  border-radius: 10px;
+  font-size: 15px;
+  padding: 8px; 
+  margin: 5px;  
+  font-weight: bold;
+  color: black;
+  text-align: center;
+}
+
+.tested_version_value {
+
+  width: 75px;
+  background-color: #e1b382;  
+  border: 2px solid #a28089;
+  border-radius: 10px;
+  font-size: 15px;
+  padding: 8px; 
+  margin: 5px;  
+  font-weight: bold;
+  color: black;
+  text-align: center;
+}
+
+.smm_ip {
+
+  width: 90px;
+  background-color: #e1b382;  
+  border: 2px solid #a28089;
+  border-radius: 10px;
+  font-size: 15px;
+  padding: 8px; 
+  margin: 5px;  
+  font-weight: bold;
+  color: black;
+  text-align: center;
+}
+  
+.tools {
+	
+	width: 220px;
+	height: 80px;
+	border: 2px solid #eee;
+	background-color: #0080ff;
+	color: white;
+	padding: 14px 28px;
+	font-size: 24px;
+	font-weight: bold;
+	cursor: pointer;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius:18px;
+    margin-right: 8px;
+	margin:8px;
+	text-decoration: none;
+}
+
+.tools:hover {
+  background-color: #ddd;
+  color: black;
+}
+  
+.PDU_portal, .Wizard_portal {
+	display: inline-block;
+	width: 50%;  
+} 
+
+.left {
+        float: left;
+        width: 50%;
+		grid-template-columns: repeat(3,1fr);
+}
+.right {
+	float: right;
+	width: 50%;
+}
+	  
+
+.ALL_Buttons {
+  display: flex;
+  justify-content: center;
+  text-align: left;
+}
+
+.All_versions {
+  margin-left: 20px;
+}
+
+.container_left_side {
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      margin-top: auto;
+      max-width: 800px;
+    }
+
+ .container {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      justify-content: space-between;
+      margin-top: auto;
+	  margin-right: 20px;
+      max-width: 800px;
+
+    }
+	
+#url-select {
+	  float:right;
+	  margin-right: 10px;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      background-color: #fff;
+      font-size: 16px;
+      color: #333;
+      text-align: center;
+      outline: none;
+	 
+    } 
+
+#submit_QC {
+      padding: 10px 16px;
+      background-color: #4CAF50;
+      border: none;
+      border-radius: 5px;
+      color: white;
+      font-size: 14px;
+      cursor: pointer;
+    }
+
+.combo-container {
+    position: absolute;
+    bottom: 310px;
+    right: 70;
+    padding: 20px;
+    }
+	
+th {
+      background-color: #f2f2f2;
+      font-weight: bold;
+      color: purple;
+	  text-align: center;
+    }
+
+.table-container {
+  flex: 1;
+  //margin: 0 5px;
+ 
+}
+
+.progress-bar {
+  width: 280px;
+  background-color: #f2f2f2;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.progress-bar-inner {
+  width: 0%;
+  height: 20px;
+  background-color: #4CAF50;
+  transition: width 0.5s ease-in-out;
+  position: relative;
+}	
+
+.progress-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-weight: bold;
+}
+</style>
+
+
+</head>
+
+
+    <body>
+	
+	<h1>Alpha Dashboard</h1>
+	
+	
+	<form name="form1" action="/" method="POST">
+	
+	<div class="right">
+	
+	<h2 style="background-color:blue; color:white; width: 99%;" ALIGN=CENTER>PDU</h2>
+	  <div class="ALL_Buttons">
+		  <div><a href="http://172.16.20.3" target="_blank" class="PDU_buttons">PDU 1 - 172.16.20.3</a></div>
+		  <!--button type="submit" name="pdu" value="pdu" class="tools">PDU 20.0.6.6</button-->
+		  <div><a href="http://172.16.20.4" target="_blank" class="PDU_buttons">PDU 2 - 172.16.20.4</a></div>
+		  <div><a href="http://172.16.30.3" target="_blank" class="PDU_buttons">PDU 3 - 172.16.30.3</a></div>
+		  <div><a href="http://172.16.30.4" target="_blank" class="PDU_buttons">PDU 4 - 172.16.30.4</a></div>
+		  <div><a href="http://172.16.40.3" target="_blank" class="PDU_buttons">PDU 5 - 172.16.40.3</a></div>
+		  <div><a href="http://172.16.40.4" target="_blank" class="PDU_buttons">PDU 6 - 172.16.40.4</a></div>
+	
+	  </div>
+	
+	
+	
+	<!--h2 style="background-color:blue; color:white; width: 99%" ALIGN=CENTER>Alpha Reports</h2-->	
+	
+	<!--div class="container">
+	
+	<div class="ALL_Buttons">	
+		
+		<select id="url-select">
+		  <option value="http://lotus:8080/qcbin/webgraph/public.html#!/domain/PACKETLIGHT/project/Main/webdashboardpage/1017/view?authKey=42b20780-2aa2-44b4-84ec-e08e4deb17f9">PL 1000D</option>
+		  <option value="http://lotus:8080/qcbin/webgraph/public.html#!/domain/PACKETLIGHT/project/Main/webdashboardpage/1014/view?authKey=d2e43274-5939-4cac-9da1-1a3a92223c9f">PL 2000AD</option>
+		  <option value="http://lotus:8080/qcbin/webgraph/public.html#!/domain/PACKETLIGHT/project/Main/webdashboardpage/1016/view?authKey=5f993513-2f0f-461c-af39-8241e2b8ddda">PL 2000T</option>
+		  <option value="http://lotus:8080/qcbin/webgraph/public.html#!/domain/PACKETLIGHT/project/Main/webdashboardpage/1019/view?authKey=c83df4c2-62e9-4212-b594-ec5a2463e65e">PL 4000M</option>
+		  <option value="http://lotus:8080/qcbin/webgraph/public.html#!/domain/PACKETLIGHT/project/Main/webdashboardpage/1020/view?authKey=f28e4239-e3f7-418b-b20c-1df2e044ee74">PL 4000T</option>
+		  <option value="{{ url_for('static', filename='LW_graph_1_20.png') }}">LightWatch</option>
+	    </select>
+    
+		<button name="submit_QC" id="submit_QC" value="Submit_QC_1" onclick="redirectToSelectedURL()">Go</button>
+
+	</div>
+	
+	
+	
+	<div class="All_versions">
+	
+	<table id="version_GA">
+	<thead>
+        <tr>
+		  <th colspan="1">Product</th>
+          <th colspan="1">GA Versions</th>
+		  <th colspan="2">Under test Version progress</th>
+        </tr>
+        </thead>		 
+		
+		{% for each in list_dict_version %}
+		<tr>
+		<td><label style="color:black; font-size:16px; font-weight: bold;" class = "product_name" ></label></td>
+		<td><input  type="text" size="10" id="Release_ver" name="Release_ver" class = "version_value"> </td>
+		<td><input  type="text" size="10" id="Tested_ver" name="Tested_ver" class = "tested_version_value"> </td>
+		<td><div class="progress-bar"><div class="progress-bar-inner"><span class="progress-text"></span></div></div></td>
+		</tr>
+		{% endfor %}
+
+			
+	</table>
+	</div>
+	
+	
+	
+	</div-->
+	
+	</div>
+	
+	
+	
+	<div class="left">
+	
+		<h2 style="background-color:blue; color:white; width: 99%" ALIGN=CENTER>Alpha tools</h2>
+		<div class="ALL_Buttons">
+		  <!--input type="submit" style="font-size : 18px;" name="Submit" class="tools" value="Submit"-->
+		  <button type="submit" name="Wizard" value="Wizard" class="tools">Recovery Wizard</button>
+		  <!--a href="https://172.16.10.105/cgi-bin/login" target="_blank" class="tools">Polatis</a-->
+		  <button type="submit" name="Open_Optic_excel" value="Open_Optic_excel" class="tools">Optic modules Excel</button> 
+		  <button type="submit" name="Polatis_API" value="Polatis_API" class="tools">Polatis Web</button>
+		  <a href="https://latency-dashboard-file.streamlit.app/" target="_blank" class="tools">Latency Results</a>
+		  <a href="http://172.16.10.52:5000/" target="_blank" class="tools">Device IP Panel</a>
+		  <button type="submit" name="Open_IP_excel" value="Open_IP_excel" class="tools">LAB IP Excel</button> 
+		</div>
+	
+	
+	
+		<div class="container_left_side">
+					
+			<div class="table-container">	
+			<h2 style="background-color:blue; color:white; width: 95%" ALIGN=CENTER>VOA Attenuation</h2>
+			<table id="voa_table_id" class="voa_table">
+				 
+			<tbody>
+			  <tr>
+				<td><label style="color:black; font-size:16px; font-weight: bold;" >VOA 1:</label></td>
+				<td><input onClick="this.setSelectionRange(0, this.value.length)"  type="text" size="10" id="Attn_1" name="Attn_1"  class = "voa_value"> </td>
+				<td><button name="Submit_VOA" value="Submit_VOA_1" class="VOA_buttons">Submit</button></td>
+			  </tr>
+			  
+			  <tr>
+				<td><label style="color:black; font-size:16px; font-weight: bold;" >VOA 2:</label></td>
+				<td><input onClick="this.setSelectionRange(0, this.value.length)" type="text" size="10" id="Attn_2" name="Attn_2"   class = "voa_value"> </td>
+				<td><button name="Submit_VOA" value="Submit_VOA_2" class="VOA_buttons">Submit</button></td>
+			  </tr>
+			  
+			  <tr>
+				<td><label style="color:black; font-size:16px; font-weight: bold;" >VOA 3:</label></td>
+				<td><input onClick="this.setSelectionRange(0, this.value.length)" type="text" size="10" id="Attn_3" name="Attn_3"   class = "voa_value"> </td>
+				<td><button name="Submit_VOA" value="Submit_VOA_3" class="VOA_buttons">Submit</button></td>
+			  </tr>
+			  
+			  <tr>
+				<td><label style="color:black; font-size:16px; font-weight: bold;" >VOA 4:</label></td>
+				<td><input onClick="this.setSelectionRange(0, this.value.length)" type="text" size="10" id="Attn_4" name="Attn_4"   class = "voa_value"></td>
+				<td><button name="Submit_VOA" value="Submit_VOA_4" class="VOA_buttons">Submit</button></td>
+			  </tr>
+			  
+			  
+			</tbody> 
+			</table>
+			</div>
+			
+			<div class="table-container">
+			<h2 style="background-color:blue; color:white; width: 95%" ALIGN=CENTER>Disconnect device from LW</h2>		
+			<table id="smm_mode" class="voa_table">
+				 
+			<tbody>
+			
+			  <tr>
+				<td><label style="color:black; font-size:16px; font-weight: bold;" >Device IP:</label></td>
+				<td><input type="text" size="20" id="Device_ip_smm" name="Device_ip_smm"  class = "smm_ip"> </td>
+				<td><button name="Submit_SMM" value="Submit_SMM_1" class="VOA_buttons">Submit</button></td>
+			  </tr>
+			 
+			</tbody> 
+			</table>
+			</div>
+		
+			
+			
+		</div>			
+				
+	</div>
+		
+	
+	</form>
+	
+	<script type="text/javascript">
+	
+	
+	
+    var json_data = {{json_test | tojson | safe}}
+		
+	var json_data_parse = JSON.parse(json_data);
+	console.log(json_data_parse);
+	let json_version = Object.values(json_data_parse)[1]
+	//console.log(json_version);
+	
+	//Voa value from the json file
+	let json_voa = Object.values(json_data_parse)[0]
+	//let div = document.getElementsByClassName("voa_value");
+	var voa_selections = document.querySelectorAll(".voa_value"); //choose all attributes with class voa_value
+	
+	for (let i = 0; i < voa_selections.length; i++){
+		let optn = voa_selections[i];
+		//let atten = optn.value // the value of the field indeed, the attenuation in dB
+		var atten = Object.values(json_voa)[i]["Att_value"];
+		console.log(atten)
+		//optn.value.concat(' ', 'dB');
+		optn.value = atten + ' dB'; // the attenuation value concatenated with dB string
+		}
+
+
+	function openExcel() {
+		window.open('/static/test.xlsx');
+	}
+    
+	//function openExcel2() {
+	//	window.open('/static/test.xlsx');
+	//}
+	
+	function redirectToSelectedURL1() {
+		var selectedURL = document.getElementById("url-select").value;
+		window.open(selectedURL, "_blank");
+	}
+	
+	function redirectToSelectedURL2() {
+    var selectedURL = document.getElementById("url-select").value;
+    if (selectedURL.endsWith('.png')) {
+      window.open(selectedURL, "_blank");
+    } else {
+      window.open(selectedURL, "_blank");
+    }
+  }
+	
+	function redirectToSelectedURL() {
+    var selectedURL = document.getElementById("url-select").value;
+    if (selectedURL.endsWith('.png')) {
+      var win = window.open();
+      win.document.write('<html><head><title>PNG Picture</title></head><body><img src="' + selectedURL + '"></body></html>');
+    } else {
+      window.open(selectedURL, "_blank");
+    }
+  }
+  
+  
+  
+	// function to Update the progress time of the project according to start and project days that allocated in the json file
+      function updateProgress(project_start_date, project_end_date, progressBar, progressText) {
+		  var startTime = new Date(project_start_date).getTime(); // get date in ISO 8601 format - "2023-05-25" and convert it to unix time format in order to calculate the remaining time
+		  var endTime = new Date(project_end_date).getTime()
+		  //var project_days = 60
+		  project_days = endTime - startTime // days in miliseconds for unix time
+		  var allocatedTime = project_days
+		  //var allocatedTime = project_days * 24 * 60 * 60 * 1000; // 60 days
+		  var currentTime = new Date().getTime();
+		  var elapsedTime = currentTime - startTime;
+		  if (elapsedTime < 0) {
+			var elapsedTime = 0;	
+		  }
+		  var progressPercentage = (elapsedTime / allocatedTime) * 100; //Calculation percentages of elapsed time since the beginning of the project 
+		  
+		  // Update the progress bar width
+		  //var progressBar = document.querySelector(".progress-bar-inner");
+		  progressBar.style.width = progressPercentage + "%";
+
+		  // Update the progress text
+		  //var progressText = document.querySelector(".progress-text");
+		  progressText.textContent = progressPercentage.toFixed() + "%";
+
+		  // Check if the project is completed
+		  if (elapsedTime >= allocatedTime) {
+			progressBar.style.width = "100%";
+			progressText.textContent = "Release Done!";
+		  }
+		  
+		}
+
+    // Update the progress on page load
+		var progress_inner = document.querySelectorAll(".progress-bar-inner") //get all attributes with class name progress-bar-inner that show the progress bar in the table
+		var progress_text = document.querySelectorAll(".progress-text")  // get all attributes with class name progress-text that show the precentage text inside the progress bar in the table
+		var version_num_test = document.querySelectorAll(".version_value");
+		var tested_version_test = document.querySelectorAll(".tested_version_value");
+		var product_name_test = document.querySelectorAll(".product_name");
+			  
+		for (let i = 0; i < progress_inner.length; i++) {
+			//var project_id = Object.values(json_version)[i]["Project_id"];	
+			var project_start_date = Object.values(json_version)[i]["Start_date"];
+			var project_end_date = Object.values(json_version)[i]["End_date"];
+			version_num_test[i].value = Object.values(json_version)[i]["GA_Version"];
+			tested_version_test[i].value = Object.values(json_version)[i]["Testing_Version"];
+			product_name_test[i].innerHTML = Object.values(json_version)[i]["Product"]+ " :";
+			//console.log(project_start_date);
+			updateProgress(project_start_date, project_end_date, progress_inner[i], progress_text[i]);
+		}
+		
+	
+	// Function to fetch the newest file from the backend
+	function fetchNewestFile() {
+		fetch('/get_newest_file')
+		console.log('Call to function generate the new optics excel file:', newestFile);
+	}
+	
+	// Function to call fetchNewestFile at midnight every day
+	function callFetchNewestFileAtMidnight() {
+		// Calculate the time until midnight
+		const now = new Date();
+		const midnight = new Date(now);
+		midnight.setHours(14, 18, 0, 0); // Set to midnight
+		const timeUntilMidnight = midnight - now;
+		console.log(timeUntilMidnight)
+		console.log(timeUntilMidnight)
+		console.log(timeUntilMidnight)
+		
+		// Call fetchNewestFile after the time until midnight
+		setTimeout(function() {
+			fetchNewestFile(); // Call fetchNewestFile
+			 // Schedule next execution for the following midnight
+			const nextMidnight = new Date(midnight.getTime() + 1 * 5 * 60 * 1000);
+			const timeUntilNextMidnight = nextMidnight - now;
+			// Set up interval to call fetchNewestFile every 24 hours thereafter
+			//setInterval(fetchNewestFile, 24 * 60 * 60 * 1000);
+		//}, timeUntilMidnight);
+			// Call callFetchNewestFileAtMidnight recursively for the next day
+			setTimeout(callFetchNewestFileAtMidnight, timeUntilNextMidnight);
+    }, timeUntilMidnight);
+		
+	}
+	
+	
+	// Call the function to start fetching the newest file at midnight
+	//console.log('Call the initial function to execute the new excel')
+	//callFetchNewestFileAtMidnight();
+	
+		
+    // Update the progress every day (24 hours)
+		//setInterval(updateProgress, 24 * 60 * 60 * 1000);
+		
+  </script>
+	
+	
+    </body>
+</html>
+
+
+    
+
